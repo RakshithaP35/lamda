@@ -2,16 +2,15 @@ package com.xworkz.lamda.dto;
 
 import java.io.Serializable;
 
-public class MarketDTO implements Serializable{
+public class MarketDTO implements Serializable {
 	private String name;
 	private String location;
 	private int noOfShops;
 	private String type;
-	
-	MarketDTO(){
+
+	MarketDTO() {
 		System.out.println("default");
 	}
-
 
 	public MarketDTO(String name, String location, int noOfShops, String type) {
 		super();
@@ -31,7 +30,6 @@ public class MarketDTO implements Serializable{
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -62,57 +60,42 @@ public class MarketDTO implements Serializable{
 		return true;
 	}
 
-
-	
-
 	@Override
 	public String toString() {
 		return "MarketDTO [name=" + name + ", location=" + location + ", noOfShops=" + noOfShops + ", type=" + type
 				+ "]";
 	}
 
-
 	public String getName() {
 		return name;
 	}
-
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-
 	public String getLocation() {
 		return location;
 	}
-
 
 	public void setLocation(String location) {
 		this.location = location;
 	}
 
-
 	public int getNoOfShops() {
 		return noOfShops;
 	}
-
 
 	public void setNoOfShops(int noOfShops) {
 		this.noOfShops = noOfShops;
 	}
 
-
 	public String getType() {
 		return type;
 	}
 
-
 	public void setType(String type) {
 		this.type = type;
 	}
-
-
-	
-	
 
 }
